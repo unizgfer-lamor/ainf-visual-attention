@@ -349,7 +349,7 @@ class AutoTrial(Node):
         # get sensory input
         S =  self.needs, self.proprioceptive, self.visual
 
-        action, _, _ = self.agent.inference_step(S)
+        action = self.agent.inference_step(S)
         action = utils.add_gaussian_noise(action)
 
         if self.action_enabled:
