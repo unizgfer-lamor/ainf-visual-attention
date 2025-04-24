@@ -20,11 +20,11 @@
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="active inference, visual attention, Posner cueing task">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page - Tin</title>
+  <title>An Active Inference Model of Covert and Overt Visual Attention</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,21 +52,26 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">An Active Inference Model of Covert and Overt Visual Attention</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://www.fer.unizg.hr/en/tin.misic" target="_blank">Tin Mišić</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://www.fer.unizg.hr/en/karlo.koledic" target="_blank">Karlo Koledić</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://www.fer.unizg.hr/en/fabio.bonsignorio" target="_blank">Fabio Bonsignorio</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.fer.unizg.hr/en/ivan.petrovic" target="_blank">Ivan Petrović</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.fer.unizg.hr/en/ivan.markovic" target="_blank">Ivan Marković</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">University of Zagreb, Faculty of Electrical Engineering and Computing<br>conference</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,7 +87,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Supplementary PDF link
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -91,11 +96,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span>-->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/unizgfer-lamor/ainf-visual-attention" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -124,11 +129,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!--<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,7 +141,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +152,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The ability to selectively attend to relevant stimuli while filtering out distractions is essential for agents that process complex, high-dimensional sensory input. This paper introduces a model of covert and overt visual attention through the framework of active inference, utilizing dynamic optimization of sensory precisions to minimize free-energy. The model determines visual sensory precisions based on both current environmental beliefs and sensory input, influencing attentional allocation in both covert and overt modalities. To test the effectiveness of the model, we analyze its behavior in the Posner cueing task and a simple target focus task using two-dimensional(2D) visual data. Reaction times are measured to investigate the interplay between exogenous and endogenous attention, as well as valid and invalid cueing. The results show that exogenous and valid cues generally lead to faster reaction times compared to endogenous and invalid cues. Furthermore, the model exhibits behavior similar to inhibition of return, where previously attended locations become suppressed after a specific cue-target onset asynchrony interval. Lastly, we investigate different aspects of overt attention and show that involuntary, reflexive saccades occur faster than intentional ones, but at the expense of adaptability.
           </p>
         </div>
       </div>
@@ -159,33 +163,29 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!--<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -194,7 +194,7 @@
   </div>
 </div>
 </div>
-</section>
+</section>-->
 <!-- End image carousel -->
 
 
@@ -260,17 +260,17 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!--<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+      <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+      </iframe>
+
     </div>
-  </section>
+  </div>
+</section>-->
 <!--End paper poster -->
 
 
