@@ -14,19 +14,20 @@ The visual sensory input is on the left, and the visual prediction with target (
 
 The model is cued endogenously for 50 steps, and after a cue-target onset asynchrony period of 100 steps the target is shown.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0CwjfhYo5eQ?si=ZPXYmipHABjOFr_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the video here](https://www.youtube.com/watch?v=0CwjfhYo5eQ)
 
 #### Exogenous cueing
 
 The model is cued exogenously for 50 steps, and after a cue-target onset asynchrony period of 100 steps the target is shown.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KfKeA_bZ7O0?si=wMffTdiBdPnscePg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the video here](https://www.youtube.com/watch?v=KfKeA_bZ7O0)
 
 ### Overt attention - action enabled
 
- The model is cued is presented a static object and moves the camera to focus it in the center of the image.
+The model is presented a static object and moves the camera to focus it in the center of the image.
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Ay33udKygOo?si=TrSUHusLSf8WNw4p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the video here](https://www.youtube.com/watch?v=Ay33udKygOo)
+
 
 ## Simulation
 
