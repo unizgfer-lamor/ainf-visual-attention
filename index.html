@@ -213,14 +213,14 @@
               The following videos demonstrate the model's behaviour in the Posner cueing task and the Overt attention task. The visual sensory input is on the left, and the visual prediction with target (red arrow) and covert focus (green dot) beliefs is on the right.
             </p>
           </div>
-          <h2 class="title is-4">The Posner cueing task</h2>
+          <h2 class="title is-4">The Posner Cueing Task</h2>
           <div class="container is-max-desktop" bis_skin_checked="1">
             <div class="columns is-centered has-text-centered" "="" bis_skin_checked="1">
               <div class="column is-one-half-desktop has-text-centered" bis_skin_checked="1">
                   <img src="static/images/setup_alt1.png" alt="Posner experiment overview">
               </div>
           </div>
-          <h2 class="title is-5">Endogenous cueing</h2>
+          <h2 class="title is-5">Endogenous Cueing</h2>
           <div class="content has-text-justified">
             <p>
               The model is cued endogenously for 50 steps, and after a cue-target onset asynchrony period of 100 steps the target is shown.
@@ -233,7 +233,7 @@
           </div>
 
           <br/>
-          <h2 class="title is-5">Exogenous cueing</h2>
+          <h2 class="title is-5">Exogenous Cueing</h2>
           <div class="content has-text-justified">
             <p>
               The model is cued exogenously for 50 steps, and after a cue-target onset asynchrony period of 100 steps the target is shown.
@@ -246,7 +246,7 @@
           </div>
 
           <br/>
-          <h2 class="title is-4">Overt attention - action enabled</h2>
+          <h2 class="title is-4">Overt Attention - Action Enabled</h2>
 
           <div class="content has-text-justified">
             <p>
@@ -268,11 +268,48 @@
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
+    <h2 class="title is-3">Variational Autoencoder Details</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <h3>Architecture</h3>
+
+          <p>The encoder consists of a convolutional layer 3 × 3 (in
+              channels: 3, out channels: 32), followed by four residual downsampling blocks (32→64, 64→128, 128→256, 256→512). A
+              fully connected layer maps the 512-dimensional feature vector
+              to 64, followed by another producing a 2 × 8-dimensional
+              latent space output. The decoder mirrors this structure, with
+              a fully connected layer expanding 8 to 64, reshaped into a
+              512 × H/16 × W/16 feature map, followed by four residual
+              upsampling blocks (512→256, 256→128, 128→64, 64→32)
+              and a final 3×3 convolutional layer (32 output). The VAE was
+              implemented and trained in pytorch on 240,000 32 × 32 × 3
+              images randomly generated in the Gazebo simulator. The latent
+              space was disentangled with manual encodings of sphere’s
+              image coordinates for each of the training images.</p>
+
+          <h3>Training</h3>
+          The VAE was
+          implemented and trained in pytorch on 240,000 32 × 32 × 3
+          images randomly generated in the Gazebo simulator. The latent
+          space was disentangled with manual encodings of sphere’s
+          image coordinates for each of the training images. Hyperparameters are available in the config file in the code.
+
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
     <h2 class="title is-3">Simulation</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <h3>Active inference agent demo</h3>
+
+          <h3></h3>
+
+
+          <h3>Active Inference Agent Demo</h3>
 
           <p>To begin a simple instance of the active inference agent run the following 4 commands in separate terminals:</p>
 
@@ -289,7 +326,7 @@
               - <strong>c</strong> runs the simulation for the set step count<br/>
           </p>
 
-          <h3>Automatic trials for tasks</h3>
+          <h3>Automatic Trials for Tasks</h3>
 
           <p>To start the auto trial node for the Posner paradigm, or the overt attention trial, run the following 3 commands in separate terminals:</p>
 
